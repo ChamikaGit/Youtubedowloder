@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+
+    <item android:id="@+id/action_settings1"
+        android:title="@string/action_settings1"
+        android:orderInCategory="100"
+        android:icon="@drawable/refresh"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/show_secure"
+        android:enabled="true"
+        android:title=""
+        android:visible="true"
+        app:actionLayout="@layout/show_protected_switch"
+        app:showAsAction="always" />
+
+<!--
+    <item android:id="@+id/action_downlode"
+        android:title="Download videos Via SaveFrom.net!"
+        android:orderInCategory="100"
+        android:icon="@drawable/downlode1"
+        app:showAsAction="never" />
+
+        -->
+
+    <item android:id="@+id/action_settings2"
+        android:title="Share!"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="ifRoom" />
+</menu>
