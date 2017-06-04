@@ -18,6 +18,7 @@ public class Splashscreen extends Activity {
         super.onAttachedToWindow();
         Window window = getWindow();
         window.setFormat(PixelFormat.RGBA_8888);
+        //splashcreen
     }
 
     @Override
