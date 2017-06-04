@@ -236,6 +236,7 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this,"Redirect to savefrom.net!!!!!", Toast.LENGTH_SHORT).show();
 
                                 // mpro.dismiss();
+                                //add
                             }
 
 
