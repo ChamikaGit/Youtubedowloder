@@ -317,13 +317,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (id == R.id.action_settings2) {
-            Intent myintent = new Intent(Intent.ACTION_SEND);
-            String webUrl = mmyWebView.getUrl();
-            //String title = "Subscribe this channel";
-            myintent.setType("text/plain");
-            myintent.putExtra(Intent.EXTRA_TEXT, "SHARE via Youtube Downloader" +"\n" + webUrl);
-            //  myintent.putExtra(Intent.EXTRA_TEXT, url);
-            startActivity(Intent.createChooser(myintent, "Youtube Downloader Youtube | Share Using"));
+            Intent intent1 = new Intent(this, Main2Activity.class);
+            startActivity(intent1);
 
             return true;
         }
