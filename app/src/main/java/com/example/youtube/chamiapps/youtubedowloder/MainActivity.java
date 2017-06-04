@@ -76,10 +76,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent myintent = new Intent(Intent.ACTION_SEND);
                 String webUrl = mmyWebView.getUrl();
-                //String title = "Subscribe this channel";
+
                 myintent.setType("text/plain");
                 myintent.putExtra(Intent.EXTRA_TEXT, "SHARE via Youtube Downloader" + "\n" + webUrl);
-                //  myintent.putExtra(Intent.EXTRA_TEXT, url);
+
                 startActivity(Intent.createChooser(myintent, "Youtube Downloader Youtube | Share Using"));
             }
         });
