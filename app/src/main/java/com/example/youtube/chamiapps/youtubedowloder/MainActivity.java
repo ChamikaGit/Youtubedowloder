@@ -71,7 +71,18 @@ public class MainActivity extends AppCompatActivity {
         progressDialog.setTitle("Please Wait !!!!");
 
         //newcommit
-
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent myintent = new Intent(Intent.ACTION_SEND);
+                String webUrl = mmyWebView.getUrl();
+                //String title = "Subscribe this channel";
+                myintent.setType("text/plain");
+                myintent.putExtra(Intent.EXTRA_TEXT, "SHARE via Youtube Downloader" + "\n" + webUrl);
+                //  myintent.putExtra(Intent.EXTRA_TEXT, url);
+                startActivity(Intent.createChooser(myintent, "Youtube Downloader Youtube | Share Using"));
+            }
+        });
 
 
         mmyWebView = (WebView) findViewById(R.id.webview);
