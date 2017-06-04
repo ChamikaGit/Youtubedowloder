@@ -70,8 +70,6 @@ public class MainActivity extends AppCompatActivity {
        // progressDialog.setIcon(R.drawable.sinhalennewsmall);
         progressDialog.setTitle("Please Wait !!!!");
 
-        //newcommit
-
 
 
         mmyWebView = (WebView) findViewById(R.id.webview);
